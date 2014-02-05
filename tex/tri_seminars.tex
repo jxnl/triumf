@@ -1,0 +1,303 @@
+\documentclass[english, 11pt]{article}
+\usepackage{notes}
+
+\newcommand{\thiscoursecode}{TRIUMF SEMINAR NOTES}
+\newcommand{\thiscoursename}{Student Seminars}
+\newcommand{\thisprof}{Staff}
+\newcommand{\me}{Jason Liu}
+\newcommand{\thisterm}{(Winter) 2014}
+\newcommand{\website}{lithium11.com}
+
+% Headers
+\chead{\thiscoursename}
+\lhead{\thisterm}
+
+% Title
+\newcommand{\notefront} {
+\pagenumbering{roman}
+\begin{center}
+
+{\ttfamily \url{\website}} {\small}
+
+\textbf{\Huge{\noun{\thiscoursecode}}}{\Huge \par}
+
+{\large{\noun{\thiscoursename}}}\\ \vspace{0.1in}
+
+  {\noun \thisprof} \ $\bullet$ \ {\noun \thisterm} \ $\bullet$ \ {\noun {Jason Liu}} \\
+
+  \end{center}
+  }
+
+% Begin Document
+\begin{document}
+
+  % Notes front
+  \notefront
+  % Table of Contents and List of Figures
+  \tocandfigures
+  % Abstract
+  \doabstract{These notes are intended as a resource for myself; past, present, or future students of this course, and anyone interested in the material. The goal is to provide an end-to-end resource that covers all material discussed in the course displayed in an organized manner. If you spot any errors or would like to contribute, please contact me directly.}
+
+% Stanley Yen
+  \section{Nuclei and Nucleons}
+    \begin{defn}[Uncertainty Principle]\label{hup}
+      The uncertainty principle is any of a variety of mathematical inequalities asserting a fundamental limit to the precision with which certain pairs of physical properties of a particle known as complementary variables.
+      \[ \sigma_x \sigma_y \leq \hbar/2 \]
+    \end{defn}
+    \subsection{Sizes and Shapes}
+
+      If we want to see nuclei, we can't just put it under a microscope since wavelengths of the light is proportional to it's resolution and visible light is pretty bad. However, iff that is the case, how can we possibly see nuclei? The answer is scattering, the analogy of bullets through a haystack is not accurate due to the techonoligies we use. Electrons are  not only particles but waves too, when we intercept a beam with nuclei, we will get diffraction pattern that we can study. \\ 
+
+      When a group of waves hit an object with some sort of internal structure, the points act like a point source of waves. The nucleus is not n infinity small point infact it is more like a charge semeared over a volume. However we have a method of using that approximation to get better results.
+
+    \[ S_{true} = S_{point-approximation} \cdot |\int \rho(r') e^{iqr'}dV'| ^2 \]
+
+      You may notice that the integral is actually a fourier series that maps the coordinate space to momentum space. By measuring the different angles (q) it is the same as sampling the integral to obtain the final result. Afterwards, we can inverse fourier transform our sampled space to deduce the charge distribution inside the nucleous. To do this, we have an electron beam collide into target, some times the electrons interact with the nucleonsa nd bounce off. We can use a magnetic spectrometer to look at the distribution of electrons post-interaction. By swining this spectrometer at different angles, we sample the momentum space. \\
+      When we look at the actual distributions, the largest peak represents the elastic scattering while the rest of the bumps are always inelastic, therethe electron happened to excite the nucleous (something inside the nucleous).\\
+      Since a small object gives a large diffraction and vise versa, we can calculate use the data to calculate the radius of nuclei. The narrower the diffraction the larger the radius of the nucleous.\\
+      If a atom was the size of football stadium, the nucleous would be on the scale of a pea. Yet it it 99.97\% of its mass
+
+    \subsection{Nuclear Energy}
+
+    Similar to electrons, protons and neutrons have shell like structures. However, nuclear energies are very high. This can be explained by the \nameref{hup}. Since nuclei are 45000x smaller by the \nameref{hup}, since $\Delta x$ is very small, $\Delta p$ is very high. 
+
+    \begin{align*}
+      p_n / p_a &= 45000\\
+      KE_n / KE_a &= (45000)^2 / 1836 = 1.1\e{6}
+    \end{align*}
+
+    \subsection{Quarks}
+
+    Later on question was posed to weither or not protons and neutrons were the last of the particles. The answer came in the form of using narrower and narrower wavelengths to probe the nucleons furthur. What we can do is shoot electrons at a film of solid hydrogen and see how the protons defract. At Standord at the time, 1/100 fm was the attainable wavelengths of those electrons, much smaller than the current accepted radius of a proton. This meant that we could definitly have resolution of things smaller than protons if they were indeed as small we thought they were.\\
+
+    However, by looking at the diffraction pattern we noticed that it wasn't equal. If the proton was a pointlike particle the defraction would have been a straight line, but instead it looked similar to our studies of nuclei. The plots showed elastic collisions happening with large amplitudes and a few bumps, signalling the existance of inelastic scattering. This pattern supposes that there were indeed internal `things' that could be excited. We notice that at very large angles, we can find evidence that there are point like objects inside the proton as the bumps smooth out to supposed point like particles.\\
+
+    Three quarks for muster mark. 
+
+    % Vijay K. Verma
+    \section{Project Managment}
+      The goal of this workshop is to do a brief overview of PMI, project management and process groups. Balancing project requirements and influence of the uncertainty. 
+
+    \subsection*{What is Unique in Scientific Organizations}
+      Unlike some pure engineering paths, there is more uncertainty in research. We have limited funding with bleeding edge techonology. Moreover, we have specialized people and skill mixes along with special constraints like radiation, dose limits etc.. Special challenges also occur like regulations, international collaborations and politcal ones.
+
+    \subsection*{Learning Objectives}
+      \begin{itemize}
+        \item What is \nameref{project management}
+        \item PMBOK knowledge areas and constraints
+        \item Project management processes
+        \item \nameref{plc}
+        \item \nameref{pmbok}
+      \end{itemize}
+
+      \begin{defn}[Project]\label{project}
+        A temporary endeavor undertaken to unique project or service.
+      \end{defn}
+
+      \begin{defn}[Project Management]\label{project management}
+        Application of knowledge, skills, tools and techniques to project activies in order to meet or exceed stakeholder needs and expectations from a \nameref{project}. We need to understand what people want without them knowing. They will want it, so deliver.
+      \end{defn}
+
+    \subsection{Project Manager}
+      slides(49, 50, 51)
+
+    \subsection{Processes of PMI}
+      \begin{enumerate}
+        \item Initiating: Authorizing the project. Spending resources to start.
+        \item Planning: Defining and refining objectives, select best course of action.
+        \item Executing: Coordnating and intergrating people to carry out plan.
+        \item Monitoring and Control: Measure progress, identify variance and cause to take corrective actions.
+        \item Closing: Formalize acceptance of project and bring to orderly end.
+      \end{enumerate}
+
+    \subsubsection*{Crazies}
+      People and money and others all effect the project. We also need strong a strong champion. Things like priorities and stakeholders keep changing. We need to figure out the network and get things done in the end. Management only hears what they want to hear. They can't hire or fire any thing. You need to give conditions that lead to success. You can't say no.
+
+    \subsubsection{PMBOK Definitions}\label{pmbok}
+
+      \begin{defn}[Project Scope]\label{scope}
+        The work that needs to be accomplished to deliver a product, service, or result with the specified features and functions.
+      \end{defn}
+
+      \begin{defn}[Project Life Cycle]\label{plc}
+        Collection of sequencial project phases whos name and number are determined by the control needs of the organizations involved in the project. It changes by the industry.
+      \end{defn}
+
+      \begin{defn}[Work Breakdown Structure]\label{wbs}
+        A deliverable-oriented grouping of the project elements which organizes and defines the total scope of the project.It helps organize the total scope of the project. Divide work into stand-alone. Often in the form of a tree diagram.
+      \end{defn}
+
+      \begin{defn}[Organization Breakdown Structure]\label{obs}
+        Project organization relating work packages to organizational units or people responsible. Ontop of the tree diagram of \nameref{wbs}, each block refers to the person responsible.
+      \end{defn}
+
+      \begin{defn}[Project Phase]\label{project phase}
+        A collection of related \nameref{activity}, usually culminating in the completion of a major deliverable
+      \end{defn}
+
+      \begin{defn}[Activity]\label{activity}
+        An element of work performed during the course of a \nameref{project phase} usually has a duration and expected cost and expected resources requirments, and be subdivided into tasks.
+      \end{defn}
+
+      \begin{defn}[Task]\label{task}
+        The lowest level of effort on a project, subdivided \nameref{activity}. Ones all tasks are finished, one has achieved a milestore.
+      \end{defn}
+
+      \begin{defn}[Milestone]\label{milestone}
+        A significant event in the \nameref{project} usually completion of a major.
+      \end{defn}
+
+      \subsubsection{Defining Success}
+      \begin{itemize}
+        \item Accepted by stakeholders and it just either meet or exceed the expectations
+        \item Meeting the performance requirement (scope)
+        \item On time and in budget
+        \item Minimumn shane in scope and does not corpate workflow
+      \end{itemize}
+
+      \subsection{Time Management}
+        There are some key processes required to ensure timely completion of the projects. We have to {\bf define} the \nameref{activity} that must be performed. We must {\bf sequence} events and identify and document dependencies. We also must {\bf estimate} the number of work periods wich whill be need to complete individual activies. Schedule development and control is also important.
+
+      \subsubsection{Planning Approach?}
+        \begin{enumerate}
+          \item Define \nameref{scope}
+          \item Develop \nameref{wbs}
+          \item Develop \nameref{obs}
+          \item Prepare Responsbility Matrix
+          \item Prepare Project Cost Estimate
+          \item Define Quality Requirements
+          \item Identify activity sequence and dependencies
+          \item Identify the critical path and calculate project duration
+          \item Analyse risk
+          \item Assemble Project Plan and get Approval
+        \end{enumerate}
+
+      \subsubsection{Planning Benefits?}
+        IThe benefits of planning this way is that it is an interactive approach to ensure nothing is overlooked. It allows for better communicatoin between stakeholders and it serves as the starting point for project approval. With planning done right, changes in scope and be noted and risks are addressed. By documenting this process, it becomes easier to justify the requirements of the project. \\
+
+      \subsubsection{Statement of Work}
+        The following is the contents of what a general statement of work.
+        \begin{itemize}
+          \item Purpose of Project
+          \item Scope Statement
+          \item Product Definition (deliverables)
+          \item Cost \& Schedule Estimates
+          \item Project Organization Stucture
+          \item \nameref{ram}
+          \item Risks
+          \item Assumptions
+          \item Project Success Factors
+        \end{itemize}
+      
+      \subsubsection{Responsibility Matrix }\label{ram}
+
+      \begin{exmp}[Software Development]
+      This is a Responsibility Assignment Matrix. B - Responsible, A = Accountable, C = Consult, I = Inform.
+      \begin{center}
+        \begin{tabular}{|l|l|l|l|l|}
+          \hline
+          ~                  & Kelly & Jason & Jonah & Jake \\ \hline
+          Define Requirments & C     & R     & A     & A    \\
+          Functional Specs.  & I     & A     & C     & R    \\
+          Coding             & I     & C     & R     & A    \\
+          Documentation      & C     & R     & A     & I    \\
+          Systems Design     & R     & A     & C     & I    \\ \hline
+        \end{tabular}
+      \end{center}
+      \end{exmp}
+      
+      \subsubsection{Milestones}
+        It is often important to define milestones in any project. A time to celebrate completion of a portion of the project. With this in mind, we need to figure out different ways to tracking a project. Bar charts are one way of figure out what needs to be done. They are easy to prepare and update but they can become complex and does not help with the control of the project. One better method to use would be the \nameref{cpm}.
+
+      \subsubsection{Critical Path Method} \label{cpm}
+        \begin{defn}[Critical Path] \label{cp}
+          The longest path through the network. It has zero float defined by a logical sequence of activities. It may be calculated after the activities have been scheduled. It determines the earliest expected project finish date. 
+        \end{defn}
+
+        The \nameref{cp} is essentially a network of tasks. They are ordered in time and can have a parallel structure. the path with the most time is the \nameref{cp} and it has no float. Delays in the \nameref{cp} will cause the project to delay. This method of time management helps us decide where to alocate scare resources.\\
+
+      \subsubsection{Path Techniques}
+        There are various techniques we can use to optimize the critical path. If we can use more resources, like staff or equipment, we can start doing jobs in parallel. If we are able to take on more risk, we can fast track and overlap sequencial activities. The main thing we want to do in every case is to maximize compression for least cost.
+
+    \newpage
+
+    \section{Nuclear Structures}
+        This talk summarizes our knowledge of nuclei and nuclear structure. First there was a brief over of the common units and unit scales and along with definitions if isotopes, isobars, isotones, types of decay and the chart of nucleids. 
+
+      \subsection{Binding Energies}
+
+      \begin{defn}[Binding energy]\label{be}
+        Binding energy is the mechanical energy required to disassemble a whole entity into separate parts. A bound system typically has a lower potential energy than the sum of its constituent parts, this is what keeps the system together.$^{[W]}$ 
+      \end{defn}
+
+      Recall $e=mc^2$, the main idea here is that the relationship between mass and energy are shared. However, the proportion of scaling is negligable at the macroscopic level. However, at the subatomic level when we bind two particles together, they decrease their energy and therefore decrease their mass. 
+
+      \begin{exmp}[Atomic Mass from Binding]
+        \[  m_{atom} = m_{nucleus} + m_{electrons} - \frac{b_{e}}{c^2} \]
+      \end{exmp}
+      
+      Nuclear binding energies however are much larger than atomic binding. In most cases, the atomic binding energy is usually just a tiny correction term that may be omited. In fact, we look at most tabular data you will find that it will be in an atomic energy which we can convert to nuclear by using the correctional terms.\\
+
+      \subsection{Saturation}
+
+      Consider the term $B/A$, it is the average binding energy per nucleon. Emperically, the average $B/A$ is $8 MeV$ (Average of an Average? Yes please!). The plot itself peaks at iron and slowly decreases as the increasing repultion of the protons causes us to pack more and more nuetrons in to introduce enought strong force to balance the electrostatic. This is called the saturation of nuclear forces. 
+
+      \begin{center}\label{plot}
+         \includegraphics[scale=0.5 ]{../img/ba}
+      \end{center}
+
+      \begin{defn}[Saturation of Nuclear forces]\label{sat}
+        The nucleus has become large enough that nuclear forces no longer completely extend efficiently across its width. Attractive nuclear forces in this region, as atomic mass increases, are nearly balanced by repellent electromagnetic forces between protons$^{[W]}$
+      \end{defn}
+     
+      At the size individual nucleons only feel a neighbourhood of forces. This indicates that the nuclear binding forces must be short ranged, similar to the forces of a kettle of water; it is the short ranged van der wals forces that hold it together. 
+      \\ 
+      \[ e_{boil} = e_{binding} \propto A^2_{water} \]
+
+      This is constant due to the short range of the forces. 
+
+      \[ B \propto A^2 \implies B/A  \propto A\]
+
+      This $8 MeV$ is about $1\%$ the total mass of the proton. This means that the mass of a nucleus is nearly $1\%$ smaller than the mass of it's constituent nucleons. Now its not on the order of $10^{-9}$ it is not negligitable. 
+
+      \subsection{Studing the plot (\ref{plot})}
+
+      By looking at the plot from \ref{plot} plot we can learn a lot about nuclear processes. 
+      The first peak is related to the production of $He^{4}$ in the sun, which releaes 28MeV per fusion! That part of the plot is where most stars spend their lives. Successive steps take far less energy. This helps us understand other properties of stars by looking at the Hertzsprung-Russell diagram. 
+
+      \begin{center}\label{rus}
+         \includegraphics[scale=0.23]{../img/rus}
+      \end{center}
+
+      \begin{itemize}
+        \item H 7 myr \
+        \item He 500 kyr \
+        \item C 600 yr \
+        \item Ne 1 yr \
+        \item Si 1 d \
+        \item Core Collapse < 1s
+      \end{itemize}
+
+      \subsubsection*{Going Backwards}
+
+      Also notice that if you go backwards along the plot, if we split up the large nucleons they will release energy as they go back up the potential. This is how we understand and make use of the energy in reactors. splitting $U$ for exmaple can give us over $200+ MeV$. 
+
+      \subsection{TRIUMF}
+
+      To figure out these binding energies, we can use something like TITAN and a beam of unstable nuclei. TITAN uses what we call a Penning Trap. It is a strong homogenous magnetic field and weak electrostatic field. By using the following equation we can accuratly measure the mass of the particle inside the trap.
+
+      \[ v_c = \frac{1}{2\pi}\frac{q}{m}B\]
+
+      The type of error we get is on the order of $10^{-12}$ enough to detect the $1\%$ changes in mass. TITAN is so accurate that if we were to weigh a plane, the error would be the mass of a missing screw.
+
+      \subsection{Liquid Drop Model}
+      \begin{defn}[Semi-empirical mass formula]\label{ldm}
+      \[ E_b = a_V A-a_S A^{2/3} - a_C \frac{Z^2}{A^{1/3}} - a_A \frac{(A-2Z)^2}{A} - \delta(A,Z) \]
+      Terms will be explained later...
+      \end{defn}
+
+      \subsection{The Valley}
+      Remark: if we look at the isobars of a certain mass we can actually notice that mass vs z ha a very parabolic fit where the vertex also happens to be the most stable point. In fact, if you have a nucleid on the side of the valley, it will roll down the walls of the potential well by $p \rightarrow n$ or vise versa undergoing $\beta^{\pm}$ decay. At the tops of the valley are what we call drip lines. At the edges, the binding energy has gone to zero meaning that it is imposible to add more protons or neutons because they just \' drip \' away!
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \end{document}
