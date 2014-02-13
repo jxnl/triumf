@@ -336,9 +336,11 @@
 
       \subsection{Liquid Drop Model}
       The liquid drop model in nuclear physics treats the nucleus as a drop of incompressible nuclear fluid. It was first proposed by George Gamow and then developed by Niels Bohr and John Archibald Wheeler. The fluid is made of nucleons (protons and neutrons), which are held together by the strong nuclear force. This is a crude model that does not explain all the properties of the nucleus, but does explain the spherical shape of most nuclei. It also helps to predict the binding energy of the nucleus.
+
       \begin{defn}[Semi-empirical mass formula]\label{ldm}
       \[ E_b = a_V A-a_S A^{2/3} - a_C \frac{Z^2}{A^{1/3}} - a_A \frac{(A-2Z)^2}{A} - \delta(A,Z) \]
       \end{defn}
+
       \begin{center}\label{rus}
          \includegraphics[scale=0.23]{../img/liquid}
       \end{center}
@@ -355,6 +357,7 @@
       \end{defn}
 
       \subsection{Coulomb Force}
+
         Imagine a hydrogen atom where the coulomb potential of the proton was $V(r) = -ke^2/r$. When you solve the \nameref{swe} we can use what Planck discovered, $E=hf$ and get quantized spectral lines. This tells us that the electron and proton relationship is in fact a coulomb potential.
 
         At that time there was no evidence for any other forces effected the atom. However there clearly fould have be a force within the nuclei that attract the neutrons and protons that were very short range. Otherwise the protons would repel. 
@@ -367,6 +370,7 @@
         However with Rutheford's data, we were not able to find any difference between the evidence and the proposed results. Later on, with more energetic experiments, they could get the protons close enough to the nuclei that the short range force perturbed the predicted scattering.
 
       \subsection{Comparing Long and Short Range Forces}
+
         Understanding the nature of this short distance force can be best explained with comparing a long range force liek gravity with a short range force like the van de wals. 
 
         Consider the binding energy of a planet. The larger the planet the higher the excape velocity per unit mass. Now consider the energy it requies to vaporize a body of water. A cup, a bathtub, and ocean? It does not get any harder to boil the water per unit mass. 
@@ -374,9 +378,11 @@
         The same thing happens with the strong force. After say, $C^{12}$ the range of the force can only feel so many particles. That way after $C^{12}$ it becomes hard to really feel more particles. This is what \nameref{sat} is really about. In fact, we can actually use $C^{12}$ as a tough estimate for the range of the strong force, about $5fm$. It is actually more like $2-3 fm$
   
       \subsection{Probing the Nuclei}
+
         There are two techniques we use to study these kinds of properties. One is called scattering and the other is called bound state.
 
       \subsubsection*{Scattering}
+
         This is essentially what Rutheford did back in the day. We throw particles into a potential and see how the potential changes it's trajectory. By sampling $V(r)$ and finding it's inverse fourier transform, we can figure out the shape and amplitude of the potential.
 
       \begin{defn}[Born Approximation Scattering Amplitude]
@@ -454,12 +460,66 @@
       In 1947 scientists went to the sky to look for cosmic rays for mesons using stacks of photographic. Usually, cosmic rays of protons around TeV colide with a nitrogen nuclous that break apart into pion -> muon + neutrino. 
 
       \subsubsection{From the Heisenberg uncertainty principle}
-      The shorter the lifetime $\Delta t$ of a quantum state (such as a meson) the greater the uncertainty in its mass or energy $\Delta E$.
+       The shorter the lifetime $\Delta t$ of a quantum state (such as a meson) the greater the uncertainty in its mass or energy $\Delta E$.
 
-      \[ \Delta E \cdot \Delta t > h/2\pi\]
+        \[ \Delta E \cdot \Delta t > h/2\pi\]
 
-      So when these short-lived mesons are produced in a high energy particle collision, and you try to measure their mass, they show a width due to the uncertainty principle.
-      The nucleus is a dynamic object where pions and heavier mesons constantly flit in and out of existence for only as long as permitted by \nameref{hup}. These temporary mesons that exist by energy borrowed from the uncertainty principle are called virtual mesons.
+        So when these short-lived mesons are produced in a high energy particle collision, and you try to measure their mass, they show a width due to the uncertainty principle.
+        The nucleus is a dynamic object where pions and heavier mesons constantly flit in and out of existence for only as long as permitted by \nameref{hup}. These temporary mesons that exist by energy borrowed from the uncertainty principle are called virtual mesons.
+      
+      \section{Nuclear Shell Model}
+
+        Electrons in atoms take up shells with discret energies. The question was that whether or not nuclei had the same behavior. This was in fact the case, different shapes in electron shells give us different behaviour of the atom, be it radius or ionization. Most of it's behavioral patterns can be summarized in the table of elements.
+
+        The problem was that the succes of hte lquid drop model did not posit the potential discret jumps. Furthurmore, when we look at the binding energies, nucleons should not have well defined energies. Again, more fluid than discreet. Many papers were written about why they couldn't have shells. However later experiemnts proved them wrong.
+
+        \subsection{Magic Numbers}
+
+        The experimental data compared to the liquid drop model shows execess binding energy. If we look at the ionization analog for atoms. We notice jumps at nucleon numbers (8, 20, 28, 50, 82, 126). These numbers seemed to indicate extra binding. We look at even even nuclei, we see a another maximun at (50, 82, 126) we get a extra enhancement of binding. Moreover, we can look at the analog of reactivitiy (capture cross section, we find dips at (20, 50, 82, 126). When we plot nuclear radius, we also find minimuns at (20, 28, 50,82, 126). So the data indicate that at (2, 8,20, 28, 50, 82, 126), these where magic numbers
+
+        By looking at the 1D infinity square well where,
+
+        \[E = p^2/2M = n^2h^2 / 8ML^2 \]
+
+        If we pick a different shaped well. If we use a 3D infinite square well or a harmonic well, it only works closer to the lower numbers. Even a Woods Saxon potential, one that fits nuclear potential well, does not fit the shell closures. 
+
+        \subsection{Fermi}
+
+        A spin orbit force $v(r) = V_o(r) = V_{ls}\vec{L}\cdot\vec{S}$. Since the protons and neutrons have spin, the force is depending on the parallelness or antiparallelness of two particles. The parallel configuration is lower in energy and the antiparallel configuration is higher. This effect is very small in atomic physics.However, in nuclear physics, it is huge. If we use this spin force to predict the shell closures, it turns out that it is what accuratly models the shells. They got the nobel prize!
+
+        \subsection{Filling the Shells}
+
+        How that we have a model of the nuclear shells, we can start filling them. It is important to have two different shells, one for protons and one for neutrons. How it is much easier to explain stable nuclei. The spin dependent shell model explains the stability of magic numbers and even even nuclei. It is also important to note that any unpaired nucleon will result in the spin of the whole nuclei. While complex for excited nuclei, it is a very simple model for ground state nuclei.
+
+        \subsection{Alpha Decay}
+
+        $\alpha$ particles are actually $^4$He nuclei. It is what heavy nuclei do to reduce the ratio of $Z^2/A$ by spontaneious emission. Notice that $Z^2/A$ is the ratio between repulsive coulomb potential and strong attractive potential. 
+
+        However, it seems strange that it would emit protons vs alpha. However, because of the tight mass of the alpha particle, its stability, there is more energy available to actually emit the particle. If we count the number of quantum states. 
+
+        \begin{defn}[Geiger Nuttall Law]
+           In nuclear physics, the Geiger - Nuttall law or Geiger - Nuttall rule relates the decay constant of a radioactive isotope with the energy of the alpha particles emitted. Roughly speaking, it states that short-lived isotopes emit more energetic alpha particles than long - lived ones
+           \[\ln \lambda = -a_1\frac{Z}{\sqrt{E}}+a_2\]
+        \end{defn} 
+
+        This was very strange and defied a lot of physics that time. however it was later discovered that it was a result of quantum tunneling, an analog of evanescent waves in optics. 
+
+        \begin{defn}[Evanescent Wave]
+          An evanescent wave is a near-field wave with an intensity that exhibits exponential decay without absorption as a function of the distance from the boundary at which the wave was formed
+        \end{defn}
+
+         
+
+      \begin{center}
+         \includegraphics[scale=0.7]{../img/qwave}\\
+         We can essentially see that the wave decays exponentially in the potential wall.
+      \end{center}
+
+      Lets now reconsider alpha decay. The alpha particle in the vicinity of the alpha particle, all it really is that the alpha particle tunnles through the hyperbolic potential.
+
+
+
+
 
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \end{document}
